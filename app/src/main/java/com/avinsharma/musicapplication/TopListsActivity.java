@@ -6,20 +6,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class RecentlyPlayed extends AppCompatActivity {
+public class TopListsActivity extends AppCompatActivity {
 
     Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recently_played);
+        setContentView(R.layout.activity_top_lists);
 
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RecentlyPlayed.this, NowPlaying.class));
+                startActivity(new Intent(TopListsActivity.this, NowPlayingActivity.class));
             }
         });
 

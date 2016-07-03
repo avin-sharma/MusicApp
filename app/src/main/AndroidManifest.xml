@@ -8,21 +8,25 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:configChanges="screenSize|orientation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NowPlaying"
-            android:label="@string/category_now_playing"/>
-        <activity android:name=".RecentlyPlayed"
+        <activity android:name=".NowPlayingActivity"
+            android:label="@string/category_now_playing"
+            android:configChanges="screenSize|orientation"/>
+        <activity android:name=".RecentlyPlayedActivity"
             android:label="@string/category_recent"/>
-        <activity android:name=".TopLists"
-            android:label="@string/category_top_lists"/>
-        <activity android:name=".Library"
-            android:label="@string/category_library"/>
+        <activity android:name=".TopListsActivity"
+            android:label="@string/category_top_lists"
+            android:configChanges="screenSize|orientation"/>
+        <activity android:name=".LibraryActivity"
+            android:label="@string/category_library"
+            android:configChanges="screenSize|orientation"/>
     </application>
 
 </manifest>

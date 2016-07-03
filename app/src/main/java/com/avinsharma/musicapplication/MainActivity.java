@@ -26,28 +26,28 @@ public class MainActivity extends AppCompatActivity {
         nowPlaying.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, NowPlaying.class));
+                startActivity(new Intent(MainActivity.this, NowPlayingActivity.class));
             }
         });
 
         recentlyPlayed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, RecentlyPlayed.class));
+                startActivity(new Intent(MainActivity.this, RecentlyPlayedActivity.class));
             }
         });
 
         topLists.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, TopLists.class));
+                startActivity(new Intent(MainActivity.this, TopListsActivity.class));
             }
         });
 
         discover.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Library.class));
+                startActivity(new Intent(MainActivity.this, LibraryActivity.class));
             }
         });
     }
